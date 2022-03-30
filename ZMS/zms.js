@@ -238,3 +238,7 @@ slider.append(fig,line)
 const moredetails1=()=>{
     window.location.href="https://zoomcar.s3.ap-southeast-1.amazonaws.com/ZS-Zoomcar-Mobility-Services-ZMS-Subscription01"
 }
+ // function ------->5
+const gooo=()=>{
+    window.location.href="#input"
+}
