@@ -108,17 +108,21 @@ drop_down.addEventListener("click", function () {
 let drop_left = document.getElementById("drop_left");
 let nav_drop = () => {
   let drop_left = document.getElementById("drop_left");
-  drop_left.style = "display: none;";
+  drop_left.style = "display: none";
 };
 nav_drop();
 let nav_menu = document.getElementById("nav_menu");
+// var j = 0;
 
 nav_menu.addEventListener("click", function () {
+  // j++;
+
   drop_left.style = "visibility: visible;";
 });
+// }
 
-let remove = document.body;
-console.log("remove:", remove);
-remove.removeEventListener("click", function () {
+let hide = document.getElementById("hide");
+
+hide.addEventListener("click", function () {
   drop_left.style = "display: none;";
 });

@@ -33,7 +33,8 @@
 #nav_menu {
   /* color: aliceblue; */
   /* background-color: aliceblue; */
-  width: 35px;
+  width: 40px;
+  margin-top: -15% !important;
   cursor: pointer;
 }
 /* ///////navbar end///// */
@@ -193,9 +194,11 @@
 /* //////////////navdrop start////// */
 
 #profile {
-  background-color: red;
-  padding: 7%;
-  width: 360px;
+  background-color: black;
+  color: white;
+  padding: 5%;
+  width: 400px;
+  margin-top: 0%;
 }
 #otherThinks {
   display: flex;
@@ -203,13 +206,50 @@
   color: #000;
   flex-direction: column;
   position: absolute;
-
-  width: 410px;
+  /* line-height: 250%; */
+  width: 440px;
   box-sizing: border-box;
+  /* margin-left: -20px; */
+}
+#otherThinks div {
+  cursor: pointer;
+  padding: 11px;
+  color: #1f1f1f;
+  display: flex;
+  text-align: center;
+  /* border: 1px solid red; */
+  gap: 9%;
+  /* margin-left: 16px; */
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  color: #1f1f1f;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica,
+    Arial, sans-serif;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
 }
 #drop_left {
   margin-left: 0%;
+  left: 0;
+  top: -20%;
   position: absolute;
-  margin-top: 1%;
+  margin-top: 1.4%;
+  /* border: 1px solid red; */
   /* display: none; */
+}
+.nav_icon {
+  width: 30px;
+  border-radius: 50%;
+}
+#close {
+  display: flex;
+  justify-content: space-between;
+}
+#hide {
+  cursor: pointer;
+}
+#logo {
+  align-items: center;
+  margin-top: 5%;
 }
