@@ -237,4 +237,7 @@ body{
     border: none;
     height: 30px;
 }
+#ex>input{
+    width: 10.5%;
+}
 

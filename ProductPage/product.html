@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href='//assets.zoomcar.com/assets/favicon-94c70086866938b66cbd6706cfb6e048.png' rel='shortcut icon' type='image/png'>
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        /* ...............the sorting page css start here ................*/
+        #productPage{
+            display: flex;
+            width: 80%;
+            border: solid red;
+            height: auto;
+            margin: auto;
+        }
+        #sorting{
+            height: auto;
+            width: 40%;
+            border: solid teal;
+        }
+        #p{
+            font-weight: bold;
+        }
+        #color{
+            background-color: #f0f4ff;
+            color: #7c9ee1;
+        }
+        #seats,#brand,#type,#delivery{
+           display: flex;
+        }
+        #seats>div,#brand>div,#type>div,#delivery>div{
+            width: 23.3%;
+            flex: 0 1 80%;
+            display: flex;
+            background: #f5f5f5;
+            padding: 4px;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            border-radius: 4px;
+            border: solid #666;
+        }
+        #center{
+            width: 80%;
+            margin: auto;
+            justify-content: space-between;
+        }
+        /* ...............the sorting page css end here ................*/
+        #area{
+            display: flex;
+            border: solid 1px #e0e0e0;
+            border-radius: 4px;
+            margin-bottom: 16px;
+            height: 50px;
+            color: #1f1f1f; 
+        }
+        input{
+            border: none;
+        }
+        #container{
+            padding: 16px;
+            color: #1f1f1f;
+            max-width: 600px;
+            margin-right: auto;
+            margin-left: auto;
+            display: flex;
+            flex-direction: column;
+        }
+        #dot{
+            height: 8px;
+            min-width: 8px;
+            min-height: -0px;
+            border-radius: 50%;
+            background-color: #10a310;
+            box-shadow: 0 0 8px 8px #e6ffea;
+            margin-left: 3%;
+            margin-top: 11%; 
+        }
+        #enter{
+            margin-left: 10px;
+        }
+         /* ...............the product page css start here................*/
+    </style>
+
+</head>
+<body>
+    <!-------------------------------------- sorting page start here ------------------------------------------>
+    <div id="productPage">
+        <div id="sorting">
+            <div id="center">
+                <p id="p">Seats</p>
+                    <div id="seats">
+                        <div>4</div>
+                        <div>5</div>
+                        <div>6</div>
+                        <div>7</div>
+                    </div>
+                <p id="p">Car Types</p>
+                <div id="brand">
+                    <div>SUV</div>
+                    <div>hatchback</div>
+                    <div>sedan</div>
+                </div>
+                <p id="p">Transmission</p>
+                <div id="type">
+                <div>manual</div>
+                <div>Automatic</div>
+                </div>
+                <p id="p">Delivery Type</p>
+                <div id="delivery">
+                    <div>Home Dlivery</div>
+                    <div>Airport</div>
+                </div>
+                <div id="color">
+                    <p>
+                        Enjoy free kilometers. If you leave the car with excess fuel compared to booking start, value of that extra fuel will be refunded to you
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-------------------------------------- sorting page end here ------------------------------------------>
+        <!------------------------------ product page start here ------------------------------------------------->
+        <div id="products">
+            <div id="inputs">
+
+            </div>
+        </div>
+        <!------------------------------ product page start here ------------------------------------------------->
+        
+    </div>
+</body>
+</html>
+<script>
+    let mainData=JSON.parse(localStorage.getItem("city"))
+    console.log(mainData)
+</script>
