@@ -1,0 +1,50 @@
+#input {
+    text-align: center;
+    margin-top: 30%;
+    
+}
+#head{
+    font-family: sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.31;
+    letter-spacing: normal;
+    text-align: center;
+    color: #1f1f1f;
+    max-width: 420px;
+}
+input{
+    height: 30px;
+    border-radius: 5px;
+}
+input:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#desc:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#desc{
+    border-radius: 5px;
+    height: 100px;
+}
+#mail,#desc{
+    width: 22%;
+}
+#submit{
+    background-color: #10a310;
+    color: white;
+    font-weight: bold;
+    width: 8%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+p{
+    color: #666;
+}
+#submit:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+}

@@ -1,0 +1,39 @@
+#slider{
+    overflow: hidden;
+    margin-bottom: 40px;
+    margin-top: 0px;
+    width: 90%;
+    text-align: center;
+}
+
+   #slider figure{
+     position:relative;
+     width: 500%;
+     margin: 0;
+     left: 0;
+     animation: 8s slider infinite;
+   }
+   #slider figure img{
+     float: left;
+     width: 20%;
+   }
+   @keyframes slider{
+     0%{
+       left:0;
+     }
+     20%{
+       left:0;
+     }
+     25%{
+       left:-100%
+     }
+     45%{
+       left:-100%
+     }
+     50%{
+       left:-200%
+     }
+     70%{
+       left:-200%
+     }
+   }

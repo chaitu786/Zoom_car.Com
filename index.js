@@ -102,19 +102,6 @@ drop_down.addEventListener("click", function () {
   }
 });
 
-////////////////////navbar dropbox start//////
-// let drop_left = document.getElementById("drop_left");
-// let nav_drop = () => {
-//   let drop_left = document.getElementById("drop_left");
-//   drop_left.style = "display: none";
-// };
-// nav_drop();
-// let nav_menu = document.getElementById("nav_menu");
-// nav_menu.addEventListener("click", function () {
-//   drop_left.style = "visibility: visible;";
-// });
-
-// let hide = document.getElementById("hide");
-// hide.addEventListener("click", function () {
-//   drop_left.style = "display: none;";
-// });
+// console.log("slider:", slider);
+// let a = slider();
+// console.log("a:", a);
