@@ -6,7 +6,7 @@
   display: flex;
   background: #000;
   justify-content: space-between;
-  /* overflow: hidden; */
+
   font-style: normal;
 
   top: 0;
@@ -31,20 +31,19 @@
 }
 
 #nav_menu {
-  /* color: aliceblue; */
-  /* background-color: aliceblue; */
+
   width: 40px;
   margin-top: -15% !important;
   cursor: pointer;
+
+   
 }
 /* ///////navbar end///// */
 
 /* ///////////car imgae/ */
 #top_page img {
   width: 100%;
-  /* background-size: cover;
-  background-position: bottom right;
-  position: relative; */
+ 
 }
 
 /* dicount image start */
@@ -54,11 +53,10 @@
 
   width: 90%;
   margin: auto;
-  /* gap: 3%; */
+
 }
 #promo div {
-  /* left: 0;
-        right: 0; */
+ 
   padding: 4%;
   box-sizing: border-box;
   cursor: pointer;
@@ -76,7 +74,7 @@
   display: flex;
   background-color: white;
   color: #666;
-  /* justify-content: space-around; */
+
 
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica,
     Arial, sans-serif;
@@ -85,7 +83,7 @@
 }
 #inner_refer + div {
   width: 20%;
-  /* display: block; */
+
 }
 #inner_refer img {
   width: 100%;
@@ -96,34 +94,15 @@
 
   font-weight: bold;
 }
-/* #inner_refer div:nth-child(2) {
-  /* width: 60%; */
-/* line-height: 50%; */
-/* justify-content: center;
-  align-content: center; */
 
-/* background-color: #666; */
-/* flex-wrap: wrap; */
-/* margin-left: 2%; */
-/* text-align: center; */
-/* display: inline-block; */
-
-/* background-color: aqua; */
 
 #refer_text {
-  /* box-sizing: border-box;
-  margin-top: 6%; */
-
-  /* background-color: aqua;
-   */
+  
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* line-height: -9.5em; */
-  /* flex-wrap: wrap; */
-
-  /* line-height: 50%; */
+  
 }
 #stop_slider {
   display: flex;
@@ -132,14 +111,11 @@
   overflow: scroll;
   overflow-x: visible;
 
-  /* visibility: visible; */
+  
   gap: 5%;
-  /* white-space: nowrap; */
-}
-/* #stop_slider div {
-  /* width: 100%; */
 
-/* ; */
+}
+
 
 #stop_slider div img {
   width: 300px;
@@ -165,8 +141,7 @@
   text-align: center;
   gap: 0.3%;
 
-  /* border-top: 1px solid black;
-  border-bottom: 1px solid black; */
+
   color: #666;
   background-color: #f7f9fb;
 
@@ -206,10 +181,11 @@
   color: #000;
   flex-direction: column;
   position: absolute;
-  /* line-height: 250%; */
+
   width: 440px;
   box-sizing: border-box;
-  /* margin-left: -20px; */
+
+  
 }
 #otherThinks div {
   cursor: pointer;
@@ -217,9 +193,9 @@
   color: #1f1f1f;
   display: flex;
   text-align: center;
-  /* border: 1px solid red; */
+
   gap: 9%;
-  /* margin-left: 16px; */
+ 
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.25px;
@@ -229,14 +205,21 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
 }
+#drop_left::-webkit-scrollbar {
+  display: none;
+}
 #drop_left {
-  margin-left: 0%;
-  left: 0;
-  top: -20%;
-  position: absolute;
-  margin-top: 1.4%;
-  /* border: 1px solid red; */
-  /* display: none; */
+  
+   margin-left: 10px;
+    position: fixed;
+    transition-duration: 0.12s;
+  z-index: 100;
+  top: 33px;
+
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+ 
+
+
 }
 .nav_icon {
   width: 30px;

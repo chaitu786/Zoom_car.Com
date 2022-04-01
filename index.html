@@ -7,8 +7,8 @@
   </head>
   <body>
 
-    <!-- <div id="navExport"></div> -->
-    <div id="navbar">
+    <div id="navExport"></div>
+    <!-- <div id="navbar">
       <div>
 
         <div id="drop_left">
@@ -46,7 +46,7 @@
         <h3>ZMS</h3>
         <h3>Login?sign</h3>
       </div>
-    </div> 
+    </div>  -->
 <!-- /////////////////////////////////navbar done... -->
     <div id="top_page">
       <img src="https://www.zoomcar.com/img/bg-desktop.png" alt="" srcset="" />
@@ -101,12 +101,29 @@ Self-drive cars from Zoomcar have given customers more control, privacy, and fre
     </div>
   </body>
 </html>
- 
-<!-- <script type="module">
+
+<script type="module">
   import header from "./COMPONENT/navbar.js"
 
   let navExport= document.getElementById("navExport")
   navExport.innerHTML= header()
-  // console.log('header:', header)
-</script> -->
-<script src="index.js"></script>
+
+  let drop_left = document.getElementById("drop_left");
+let nav_drop = () => {
+  let drop_left = document.getElementById("drop_left");
+  drop_left.style = "display: none";
+};
+nav_drop();
+let nav_menu = document.getElementById("nav_menu");
+nav_menu.addEventListener("click", function () {
+  drop_left.style = "visibility: visible;";
+});
+
+let hide = document.getElementById("hide");
+hide.addEventListener("click", function () {
+  drop_left.style = "display: none;";
+});
+
+
+</script>
+ <script src="index.js"></script>

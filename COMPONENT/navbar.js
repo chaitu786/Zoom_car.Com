@@ -37,7 +37,7 @@ let header = () => {
         <h3>ZMS</h3>
         <h3>Login?sign</h3>
       </div>
-    </div> `;
+    </div>`;
 };
 
 export default header;

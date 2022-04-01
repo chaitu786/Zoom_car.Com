@@ -67,10 +67,8 @@ let stop = async () => {
       `https://api.zoomcar.com/v4/home/offers?platform=web&version=2&device_id=000&device_name=000&city=mumbai&country_code=IND&locale=en`
     );
     let data = await res.json();
-    // console.log("data:", data);
+
     let data1 = data.offers;
-    appendStopSlider(data1);
-    console.log("data1:", data1);
   } catch (e) {
     console.log("e:", e);
   }
@@ -101,28 +99,22 @@ drop_down.addEventListener("click", function () {
     drop_down.style = "  border-bottom: solid 1px rgba(0, 0, 0, 0.12)";
   } else {
     drop.style.display = "flex";
-    // drop_down.style = "  border-bottom: solid 1px rgba(0, 0, 0, 0.12)";
   }
 });
+
 ////////////////////navbar dropbox start//////
-let drop_left = document.getElementById("drop_left");
-let nav_drop = () => {
-  let drop_left = document.getElementById("drop_left");
-  drop_left.style = "display: none";
-};
-nav_drop();
-let nav_menu = document.getElementById("nav_menu");
-// var j = 0;
+// let drop_left = document.getElementById("drop_left");
+// let nav_drop = () => {
+//   let drop_left = document.getElementById("drop_left");
+//   drop_left.style = "display: none";
+// };
+// nav_drop();
+// let nav_menu = document.getElementById("nav_menu");
+// nav_menu.addEventListener("click", function () {
+//   drop_left.style = "visibility: visible;";
+// });
 
-nav_menu.addEventListener("click", function () {
-  // j++;
-
-  drop_left.style = "visibility: visible;";
-});
-// }
-
-let hide = document.getElementById("hide");
-
-hide.addEventListener("click", function () {
-  drop_left.style = "display: none;";
-});
+// let hide = document.getElementById("hide");
+// hide.addEventListener("click", function () {
+//   drop_left.style = "display: none;";
+// });

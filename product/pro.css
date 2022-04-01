@@ -1,0 +1,10 @@
+#cont {
+  display: flex;
+}
+#type {
+  width: 30%;
+  border: 1px solid red;
+}
+#filters {
+  display: flex;
+}
