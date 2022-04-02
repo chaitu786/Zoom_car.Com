@@ -53,7 +53,7 @@ const appendData = (mainData, add) => {
     btn.onclick = () => {
       localStorage.setItem("bookingdata", JSON.stringify(el));
 
-      window.location.href = "/Zoom_car.Com/ProductPage/booking.html";
+      window.location.href = "/ProductPage/booking.html";
     };
     add.append(mainDiv);
   });

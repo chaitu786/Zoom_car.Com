@@ -156,4 +156,35 @@
   //   });
   //   appendData(a, add);
   // });
+
+
+  let sedan = document.getElementById("seadn");
+  sedan.addEventListener("click", function () {
+    var a = mainData.filter(function (el) {
+      // console.log("el:", el);
+      return el.brand == "seadn";
+      // console.log("anuj");
+    });
+    appendData(a, add);
+  });
+
+  let SUV = document.getElementById("SUV");
+  SUV.addEventListener("click", function () {
+    var a = mainData.filter(function (el) {
+      // console.log("el:", el);
+      return el.brand == "SUV";
+      // console.log("anuj");
+    });
+    appendData(a, add);
+  });
+
+  let HATCH = document.getElementById("hatchback");
+  HATCH.addEventListener("click", function () {
+    var a = mainData.filter(function (el) {
+      // console.log("el:", el);
+      return el.brand == "hatchback";
+      // console.log("anuj");
+    });
+    appendData(a, add);
+  });
 </script>
