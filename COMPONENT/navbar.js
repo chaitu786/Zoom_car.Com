@@ -21,7 +21,7 @@ let header = () => {
               <img id="mini_logo1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShD6vSie5jRMvigubmEuKbqVC5Zvbzi7JWfw&usqp=CAU" alt="">
               <p id="mini_logop">Paytm wallet</p>
             </div>
-           <span class=line1></span>
+           <span class=line1>.</span>
             <div>
               <img id="mini_logo" src="https://zoomcar-assets.zoomcar.com/images/original/8fd962bb0a6a08fba5efe0c0b0ac8e84dd2cd1cd.png?1639665815" alt="">
               <p>My Trips</p>
@@ -38,13 +38,20 @@ let header = () => {
               <img id="mini_logo" src="https://zoomcar-assets.zoomcar.com/images/original/ba92474ca24ac2fa55a0e08f48d4e717c653b95f.png?1639665900" alt="">
               <p>Supermiler Club</p>
             </div>
-               <span class=line1></span>
-            <div>
+               <span class=line1>.</span>
+           <div onclick='window.location.href="./policy and help page/Privacy Policy/Fleet Policy/index.html"'>
+
+              <img id="mini_logo" src="https://zoomcar-assets.zoomcar.com/images/original/c76c4989e715cd1b00cfc805386945db54ff2520.png?1639665929" alt="" >
+              <p>Zoomcar Fleet Vehicles Policies</p>
+            </div>
+          
+            <div onclick='window.location.href="./policy and help page/Privacy Policy/Host-Policy/index.html"'>
 
               <img id="mini_logo" src="https://zoomcar-assets.zoomcar.com/images/original/c76c4989e715cd1b00cfc805386945db54ff2520.png?1639665929" alt="" >
               <p>Zoomcar Host Vehicles Policies</p>
             </div>
-            <div>
+            <div onclick='window.location.href="./policy and help page/Privacy Policy/Help & Support/index.html"'/>
+          
               <img id="mini_logo" src="https://zoomcar-assets.zoomcar.com/images/original/131bc2a8be29213cd0136a357b16f43bb032e8e8.png?1639665956" alt="" >
               <p>Help & Support</p>
             </div>

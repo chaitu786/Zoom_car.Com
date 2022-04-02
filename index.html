@@ -16,10 +16,14 @@
 <center>
      <div id="search">
        <samp class="bluedot">.</samp>
-    Pick Up City,Airport,Address or Hotel
-   </div>
+
+         Pick Up City,Airport,Address or Hotel
+      
+       </div>
+   
 <div id="dates"></div>
    <button id="find_cars">FIND CARS</button>
+
   </center>
      
     </div>
@@ -34,7 +38,7 @@
     <div id="footer">
       <div>
         <div id="show_drop">
-        
+        <!-- <a href=""></a> -->
             About Us
             <img src="arrow.png" alt="" srcset="" id="toggle-up" />
           </div>
@@ -45,11 +49,11 @@
             <p>Zoomcar Blog</p>
             <p>Careers @ Zoomcar</p>
           </div>
-          <!-- <a hre"></a> -->
+       <!-- <a href=""></a> -->
       </div>
       </div>
     </div>
-   
+ 
     <div id="footer_last">
 <div>
   <h3>SELF DRIVE CARS IN MUMBAI</h3>
@@ -92,7 +96,7 @@ let nav_drop = () => {
 nav_drop();
 let nav_menu = document.getElementById("nav_menu");
 nav_menu.addEventListener("click", function () {
-  drop_left.style = "visibility: visible;";
+  drop_left.style = "display: block";
 
   
 });
@@ -162,6 +166,13 @@ let p1 = document.createElement("p")
 p1.innerHTML= userdata[1]
 p1.style="color:white;font-weight: bold;"
 user_details.append(p1)
+user_details.style="height:77.5px"
+// user_details.style="top-margin:300px"
+}
+else{
+  
+   user_details.style="height: 57.5px;"
+
 }
 }
 drop_details()
@@ -169,9 +180,13 @@ drop_details()
 let zms= document.getElementById("zms")
 // console.log('zms:', zms)
 zms.addEventListener("click", function () {
-  location.href = "./aakash/ZMS/ZMS.html";
+  location.href = "./chaithyanya/Zoom_car.Com/ZMS/ZMS.html";
 });
-
+/////////////add become page
+let become= document.getElementById("become")
+become.addEventListener("click", function(){
+location.href="./becomeHost.html"
+})
 
 </script>
  <script type="module" src="index.js"></script>

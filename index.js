@@ -101,3 +101,23 @@ drop_down.addEventListener("click", function () {
     drop.style.display = "flex";
   }
 });
+/////////////////find cars
+let search = document.getElementById("search");
+let local = localStorage.getItem("location");
+
+if (local != null) {
+  search.innerHTML = local;
+}
+
+search.addEventListener("click", function () {
+  location.href = "./chaithyanya/Zoom_car.Com/ProductPage/choose_location.html";
+});
+
+let findCar = document.getElementById("find_cars");
+findCar.addEventListener("click", function () {
+  // if(local)
+  // console.log(local);
+  if (local != null) {
+    location.href = "./chaithyanya/Zoom_car.Com/ProductPage/product.html";
+  }
+});

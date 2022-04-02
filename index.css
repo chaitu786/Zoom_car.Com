@@ -66,9 +66,9 @@ margin-top: -10% !important;
   margin: auto;
   background-image: url("https://www.zoomcar.com/img/bg-desktop.png");
   height: 680px;
-  /* background-size: cover;
-  background-position: bottom right;
-  position: relative; */
+background-size: cover;
+
+
 }
 
 /* dicount image start */
@@ -245,7 +245,7 @@ margin-top: -10% !important;
   padding: 5%;
   width: 400px;
   margin-top: 0%;
-  height: 77.5px;
+  /* height: 57.5px; */
 }
 
 #otherThinks {
@@ -271,7 +271,7 @@ margin-top: -10% !important;
   gap: 9%;
   /* margin-left: 16px; */
   font-size: 14px;
-  line-height: 25px;
+  line-height: 20px;
   letter-spacing: 0.25px;
   color: #1f1f1f;
   /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica,
@@ -375,6 +375,7 @@ width: 90%;
 left: 0;
 right: 0;
 margin-top: -10px;
+
 }
 a{
 text-decoration: none;
@@ -386,7 +387,9 @@ height: 15px;
 background-color: white;
 /* position: absolute; */
 /* z-index: 100; */
-margin-top: 350px;
+margin-top: 320px;
+
+
 width: 25%;
 /* margin-left: 50%; */
 padding: 1.5%;
@@ -399,6 +402,7 @@ Roboto,
 Helvetica,
 Arial,
 sans-serif;
+
 }.bluedot{
   width: 10px;
   font-size: 300%;
@@ -412,6 +416,7 @@ sans-serif;
  
 }
 #find_cars{
+  /* position: absolute; */
 width: 28.4%;
 margin-top: 1%;
 padding: 1%;
