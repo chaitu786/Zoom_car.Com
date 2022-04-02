@@ -1,6 +1,6 @@
 let header = () => {
   return `  <div id="navbar">
-      <div>
+      <div id="logos">
 
         <div id="drop_left">
           <div id="profile">
@@ -40,7 +40,7 @@ let header = () => {
             </div>
                <span class=line1></span>
             <div>
-            
+
               <img id="mini_logo" src="https://zoomcar-assets.zoomcar.com/images/original/c76c4989e715cd1b00cfc805386945db54ff2520.png?1639665929" alt="" >
               <p>Zoomcar Host Vehicles Policies</p>
             </div>
@@ -74,8 +74,8 @@ let header = () => {
         />
       </div>
       <div id="nav_right">
-        <h3>Become a Host</h3>
-        <h3>ZMS</h3>
+        <h3 id="become">Become a Host</h3>
+        <h3 id="zms">ZMS</h3>
         <h3 id="login&signup">Login?sign</h3>
       </div>
     </div>`;

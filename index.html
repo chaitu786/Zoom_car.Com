@@ -11,8 +11,17 @@
     
 <!-- /////////////////////////////////navbar done... -->
     <div id="top_page">
-      <img src="https://www.zoomcar.com/img/bg-desktop.png" alt="" srcset="" />
-      <form action=""></form>
+      <!-- <img src="https://www.zoomcar.com/img/bg-desktop.png" alt="" srcset="" /> -->
+     
+<center>
+     <div id="search">
+       <samp class="bluedot">.</samp>
+    Pick Up City,Airport,Address or Hotel
+   </div>
+<div id="dates"></div>
+   <button id="find_cars">FIND CARS</button>
+  </center>
+     
     </div>
 
     <div id="promo"></div>
@@ -109,12 +118,15 @@ let login= document.getElementById("login&signup")
 
 let userdata=JSON.parse(localStorage.getItem("current_user"))
 let nav_right = document.getElementById("nav_right");
-console.log('userdata:', userdata)
+// console.log('userdata:', userdata)
+if(userdata!=null){ 
 login.innerHTML=userdata[0]
+}
 if(login.innerHTML!="Login?sign"){
 
-nav_right.innerHTML=` <h3>Become a Host</h3>
-        <h3>ZMS</h3>
+nav_right.innerHTML=` <h3 id="become">Become a Host</h3>
+        <h3 id="zms">ZMS</h3>
+     
         <h3 id="login&signup">${login.innerHTML=userdata[0]}</h3>
 <h3 id="profile_photo" >
       <img src="	https://www.zoomcar.com/img/icons/icons_user.png" alt="">
@@ -141,7 +153,7 @@ logout_user()
 function drop_details(){
 let userdata=JSON.parse(localStorage.getItem("current_user"))
 let user_details= document.getElementById("user_details")
-if(userdata!=""){
+if(userdata!=null){
 let p = document.createElement("p")
 p.innerHTML= userdata[0]
 p.style="color:white;font-weight: bold;"
@@ -154,6 +166,11 @@ user_details.append(p1)
 }
 drop_details()
 
+let zms= document.getElementById("zms")
+// console.log('zms:', zms)
+zms.addEventListener("click", function () {
+  location.href = "./aakash/ZMS/ZMS.html";
+});
 
 
 </script>

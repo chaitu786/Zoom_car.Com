@@ -101,7 +101,3 @@ drop_down.addEventListener("click", function () {
     drop.style.display = "flex";
   }
 });
-
-// console.log("slider:", slider);
-// let a = slider();
-// console.log("a:", a);
