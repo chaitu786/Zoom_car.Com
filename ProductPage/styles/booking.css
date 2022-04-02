@@ -1,0 +1,47 @@
+#cars {
+    width: 80%;
+    margin: auto;
+  }
+  #cars {
+    height: 100vh;
+    overflow-y: scroll;
+  }
+  #cars::-webkit-scrollbar {
+    display: none;
+  }
+  #div1,
+  #div2,
+  #div4,
+  #div5 {
+    margin-bottom: 5%;
+  }
+  #div1 {
+    width: 20%;
+  }
+  #div1:hover ~ #div5 > button {
+    background-color: #10a310;
+  }
+  #div2:hover ~ #div5 > button {
+    background-color: #10a310;
+  }
+  #div4:hover ~ #div5 > button {
+    background-color: #10a310;
+  }
+  #div5:hover ~ #div5 > button {
+    background-color: #10a310;
+  }
+  #div2,
+  #div5 {
+    width: 20%;
+    line-height: 2%;
+  }
+  #div4 {
+    width: 38%;
+    font-size: x-small;
+    text-align: center;
+  }
+  #div4 > p {
+    width: auto;
+    margin: auto;
+    margin-top: 5%;
+  }
