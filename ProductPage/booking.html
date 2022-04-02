@@ -5,104 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-        #cars{
-            width: 40%;
-            height: auto;
-            border: solid red;
-            text-align: left;
-
-        }
-        #topDiv{
-            display: flex;
-            gap: 60%;
-        }
-        #img{
-            width: 100px;
-            height: 100px;
-        }
-        #div1{
-            line-height: 1%;
-        }
-        #logo{
-            width: 30px;
-            height: 30px;
-        }
-        #logodiv{
-            display: flex;
-            margin-left: 1%;
-            gap: 3%;
-        }
-        #date{
-            margin-top: -6%;
-            margin-bottom: 1%;
-        }
-        #fuel_id{
-            display: flex;
-            gap: 2%;
-        }
-        #f_img{
-            width: 30px;
-            height: 30px;
-            margin-top: 1.5%;
-        }
-        #rating{
-            margin-top: -1%;
-        }
-        #line{
-            background-color: #f0f4ff;
-            color: #7c9ee1;
-            height: 20px;
-            font-size: 13px;
-        }
-        #main{
-            font-family: sans-serif;
-        }
-        #del{
-            display: flex;
-            gap: 2%;
-        }
-        #p1{
-            font-size: 11px;
-            color: red;
-            margin-top: -4%;
-            margin-top: -2%;
-        }
-        #del1{
-            display: flex;
-            gap: 2%;
-            margin-top: -2%;
-        }
-        #lets{
-            margin-top: -1%;
-        }
-        #p3{
-            font-size: 11.5px;
-            color: #bdb9c1;
-            margin-top: -2%;
-        }
-        #input{
-            margin-left: 25.5%;
-        }
-        #id{
-            display: flex;
-            gap: 2%;
-        }
-        #green{
-            color:#10a310;
-            font-size: 13px;
-            margin-top: -2%;
-        }
-        #input1{
-            margin-left: 44%;
-        }
-    </style>
+    <link rel="stylesheet" href="/ProductPage/styles/booking.css">
   </head>
   <body>
       <center>
         <div id="cars"></div>
       </center>
-   
+
+      <div id="bot">
+          <center>
+              <button id="btn">CHECKOUT SUMMARY</button>
+          </center>
+      </div>
   </body>
 </html>
 
@@ -227,7 +141,8 @@
 
         let input=document.createElement('input')
         input.type="checkbox"
-        input.id="input"
+        input.id="chinna"
+        input.value="999"
         adddiv.append(c_img1,lets1,input)
         adddiv.id="del1"
 
@@ -268,21 +183,120 @@
         let a=document.createElement('p')
         let b=document.createElement('p')
 
-        a.innerText="Standard (₹255)"
-        b.innerText="You pay up to INR 1499 in case of any damage"
+        a.innerText="Peace of Mind (₹414)"
+        b.innerText="You pay up to INR 249 in case of any damage"
         b.id="p3"
       
 
         let inp=document.createElement('input')
         inp.type="checkbox"
-        inp.id="input1"
+        inp.id="inp"
 
 
         P_img.src="https://zoomcar-assets.zoomcar.com/images/original/f6b01d4ca15bc999a8a0bbe2bb64710cf71f9b75.png?1633967237"
-        peace.append(p4,p5,p6)
-        peace1.append(c_img3,damDiv4,input2)
+        peace.append(a,b)
+        peace1.append(P_img,peace,inp)
+
+        // question  
+        let Q_A_div=document.createElement('div')
+        let qn=document.createElement("p")
+        qn.innerText="How Damage Protection Works?"
+        let ans=document.createElement("p")
+        ans.innerText="Incase of accidents or any damage to the car, Zoomcar will take care of the expenses. You pay the minimum amount as per the package and we take care of the rest. Higher the package you select, lower the risk at your end for any damage. Please note that this is applicable solely in the case of damage to the vehicle and does not cover for any other third party loss."
+        ans.id="ans"
+        Q_A_div.append(qn,ans)
+        Q_A_div.id="qn"
+
+        let mind=document.createElement('h3')
+        mind.innerText="Keep In Mind"
+
         
-        maindiv.append(deldiv,add,adddiv,dam,damDiv1,peace1)
-        append.append(mainDiv,maindiv)
+        let fuel1= document.createElement('div')
+        fuel1.id="fuel_id"
+        let line1= document.createElement('p')
+        let fimg1= document.createElement('img')
+        fimg1.id="f_img"
+        fimg1.src="https://zoomcar-assets.zoomcar.com/images/original/0ebf53a526da3baa9621436223d17ee0a712495e.png?1584454768"
+        line1.innerText="Driving License Mandatory"
+
+        fuel1.append(fimg1,line1) 
+
+
+
+        let f_div1 = document.createElement('div')
+        let x=document.createElement('p')
+        x.id="x"
+        let y=document.createElement('a')
+        y.id="y"
+        let fuel2= document.createElement('div')
+        fuel2.id="fuel_id"
+        let line2= document.createElement('p')
+        let fimg2= document.createElement('img')
+        fimg2.id="f_img"
+        fimg2.src="https://zoomcar-assets.zoomcar.com/images/original/ccedfb3dddda918d76ad27240ffa582f4a59a157.png?1584454852"
+        line2.innerText="Unlimited Kms without Fuel"
+        x.innerText="Fare is inclusive of all taxes. Kindly return the car at the same fuel level as the trip start time"
+        y.innerHTML="See Details"
+        y.href="home.html"
+        f_div1.append(line2,x,y)
+        fuel2.append(fimg2,f_div1)
+
+
+        let f_div2 = document.createElement('div')
+        let m=document.createElement('p')
+        m.id="x"
+        let n=document.createElement('a')
+        n.id="y"
+        let fuel3= document.createElement('div')
+        fuel3.id="fuel_id"
+        let line3= document.createElement('p')
+        let fimg3= document.createElement('img')
+        fimg3.id="f_img"
+        fimg3.src="https://zoomcar-assets.zoomcar.com/images/original/afb10552c79c652619a45d814ab9f936f8592037.png?1584454817"
+        line3.innerText="Cancellation Policy"
+        m.innerText="Hassle free cancellations and refunds at nominal charges"
+        n.innerHTML="See Details"
+        n.href="home.html"
+        f_div2.append(line3,m,n)
+        fuel3.append(fimg3,f_div2)
+
+
+        let f_div3 = document.createElement('div')
+        let i=document.createElement('p')
+        i.id="x"
+        let j=document.createElement('a')
+        j.id="y"
+        let fuel4= document.createElement('div')
+        fuel4.id="fuel_id"
+        let line4= document.createElement('p')
+        let fimg4= document.createElement('img')
+        fimg4.id="f_img"
+        fimg4.src="https://zoomcar-assets.zoomcar.com/images/original/afb10552c79c652619a45d814ab9f936f8592037.png?1584454817"
+        line4.innerText="Agreement Policy"
+        i.innerText="I hereby agree to the terms and conditions of the Lease Agreement with Host"
+        j.innerHTML="See Details"
+        j.href="home.html"
+
+        let inpu=document.createElement('input')
+        inpu.type="checkbox"
+        inpu.id="inpu"
+
+        f_div3.append(line4,i,j)
+        fuel4.append(fimg4,f_div3,inpu)
+
+        maindiv.append(deldiv,add,adddiv,dam,damDiv1,peace1,Q_A_div,mind,fuel1,fuel2,fuel3,fuel4)
+        append.append(mainDiv,maindiv)   
     })
+     // ..............................functionalities..................................../
+     document.getElementById("chinna").addEventListener("submit",chaitu)
+        console.log(document.getElementById("chinna").value)
+         function chaitu(){
+            console.log("chaitu")
+        //     if(fun.checked==true){
+        //       console.log("chaitu")
+        //   }
+        //   else{
+        //     console.log("1")
+        //   }
+         }
 </script>

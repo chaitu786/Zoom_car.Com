@@ -5,7 +5,6 @@ body{
 #productPage{
     display: flex;
     width: 80%;
-    border: solid red;
     height: auto;
     margin: auto;
     gap: 1%;
@@ -64,9 +63,12 @@ body{
     width: 80%;
     margin: auto;
     justify-content: space-between;
-    border: solid teal;
     padding-left: 9%;
     padding-right: 9%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-right: 10%;
 }
 /* ...............the sorting page css end here ................*/
 #products{
@@ -75,11 +77,15 @@ body{
     gap: 5%;
     
 }
-#inputs{
+#inputs,#inputs1{
     display: flex;
     height: 50px;
     width: 50%;
-    border: solid red;
+    border: 1px solid #10a310;
+}
+#inputs1>p{
+    margin-left: 4%;
+    margin-top: 3%;
 }
 #dot{
     height: 8px;

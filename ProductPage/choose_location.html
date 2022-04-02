@@ -96,6 +96,7 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3wzKiv1MaS2bETRlpAeJkjJP
   });
   const chaitu = async () => {
     let location = input.value;
+    localStorage.setItem("location",location)
     console.log(location);
     let res = await fetch(`http://localhost:3000/products/`);
     let data = await res.json();

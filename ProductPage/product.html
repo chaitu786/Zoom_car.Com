@@ -63,7 +63,7 @@
             </div>
             <div id="location">append location</div>
           </div>
-          <div id="inputs"></div>
+          <div id="inputs1"></div>
         </div>
         <div id="cars"></div>
       </div>
@@ -77,6 +77,18 @@
   let mainData = JSON.parse(localStorage.getItem("city"));
 
   appendData(mainData, add);
+
+
+  let location=document.getElementById('location')
+
+  let place=localStorage.getItem("location")
+
+  location.innerText=place +","+place+","+"India"
+
+  let date= document.getElementById("inputs1")
+  let gate1=document.createElement('p')
+  gate1.innerText="🕑- 02-April-2022"
+  date.append(gate1)
 
   // sorting.........................................
   let four = document.getElementById("four");
@@ -147,44 +159,35 @@
 
   //////sorting car type.........
 
-  // let SUV = document.getElementById("SUV");
-  // SUV.addEventListener("click", function () {
-  //   var a = mainData.filter(function (el) {
-  //     // console.log("el:", el);
-  //     return el.fuel == "Diesel";
-  //     // console.log("anuj");
-  //   });
-  //   appendData(a, add);
-  // });
+  let suv = document.getElementById("SUV");
+  suv.addEventListener("click", function () {
+    var a = mainData.filter(function (el) {
+      
+      return el.brand == "SUV";
+    
+    });
+    appendData(a, add);
+  });
 
-
-  let sedan = document.getElementById("seadn");
+  let sedan = document.getElementById("sedan");
   sedan.addEventListener("click", function () {
     var a = mainData.filter(function (el) {
-      // console.log("el:", el);
-      return el.brand == "seadn";
-      // console.log("anuj");
+      
+      return el.brand == "sedan";
+    
     });
     appendData(a, add);
   });
 
-  let SUV = document.getElementById("SUV");
-  SUV.addEventListener("click", function () {
+  let hatchback = document.getElementById("hatchback");
+  hatchback.addEventListener("click", function () {
     var a = mainData.filter(function (el) {
-      // console.log("el:", el);
-      return el.brand == "SUV";
-      // console.log("anuj");
-    });
-    appendData(a, add);
-  });
-
-  let HATCH = document.getElementById("hatchback");
-  HATCH.addEventListener("click", function () {
-    var a = mainData.filter(function (el) {
-      // console.log("el:", el);
+      
       return el.brand == "hatchback";
-      // console.log("anuj");
+    
     });
     appendData(a, add);
   });
+
+
 </script>
