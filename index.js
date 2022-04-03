@@ -106,7 +106,7 @@ let search = document.getElementById("search");
 let local = localStorage.getItem("location");
 
 if (local != null) {
-  search.innerHTML = local;
+  search.innerText = local+","+local+", India";
 }
 
 search.addEventListener("click", function () {

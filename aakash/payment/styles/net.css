@@ -1,0 +1,157 @@
+.popup-header {
+    display: flex;
+    padding-bottom: 16px;
+}
+.content {
+    
+    display: flex;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-family: IBM Plex Sans;
+    font-size:20px;
+    font-weight: 600;
+    letter-spacing: 0.24px;
+    color: #1f1f1f;
+   margin-top: px;
+   margin-left: 0px;
+padding-left: 10px;
+   background-color: rgb(209, 209, 209);
+} 
+body {
+    background: #fff;
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-size: 14px;
+        padding: 0;
+    margin: 0;
+    min-height: 100%;
+    box-sizing: border-box;
+}
+    div {
+    display: block;
+}
+.bankdiv{
+    background-color:rgb(209, 209, 209);
+    font-family: IBM Plex Sans;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.24px;
+    color: #1f1f1f;
+    margin-top: 40px;
+    height: 40px;
+    padding-top: 5px;
+
+}
+#navdiv{
+    justify-content: space-between;
+        font-family: IBM Plex Sans;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.24px;
+    color: #1f1f1f;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-top: 0px;
+    margin-top: 10px;
+    
+}
+#navdiv >.img{
+    margin-left: 1100px;
+}
+#container{
+        display:block
+    }
+    .creditcard
+    {
+        display: flex;
+        font-family: 'IBM Plex Sans';
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    letter-spacing: 0.24px;
+    color: #1f1f1f;
+    margin-left: 400px;
+    margin-top: 80px;
+    
+    }
+    a{
+        color: black;
+text-decoration: none;
+cursor: auto;
+    }
+    img{
+        background-repeat: no-repeat;
+    background-position: center center;
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-size: cover;
+    margin-left: 10px;
+    padding: 12px 0px;
+
+    }
+    body{
+        font-family: "IBM Plex Sans";
+    font-style: normal;
+    font-size: 20px;
+    }
+    .netbanking
+    {
+        display: flex;
+        font-family: 'IBM Plex Sans';
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    letter-spacing: 0.24px;
+    color: #1f1f1f;
+    margin-left: 400px;
+    margin-top: 20px;
+    }
+    .mobilewallet
+    {
+        display: flex;
+        font-family: 'IBM Plex Sans';
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    letter-spacing: 0.24px;
+    color: #1f1f1f;
+    margin-left: 400px;
+    margin-top: 20px;
+    padding-left: 10px;
+    }
+    .upi{
+        display: flex;
+        font-family: 'IBM Plex Sans';
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    letter-spacing: 0.24px;
+    color: #1f1f1f;
+    margin-left: 400px;
+    margin-top: 20px;
+    padding-left: 10px;
+    }
+    .imgdiv{
+        margin-right: 50px;
+    }
+    .contentdiv{
+        margin-left: 0px;
+    }
+    .imgg{
+        margin-left: 1100px;  
+    }
+    
+    #backbtn{
+        margin-left: 200px;
+        margin-top: 50px;
+    }
+    #back{
+        width: 150px;
+        height: 50px;
+        background-color: green;
+        color: honeydew;
+        font-size: 16px;
+    }

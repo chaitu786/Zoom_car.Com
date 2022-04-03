@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+
+
+slider1=[
+    {
+        line1:"All-in-one solution to reduce operating costs over 30% via advanced vehicle",
+        line2:"monitoring and management systems",
+        imgs1:"https://www.zoomcar.com/assets/component-images/ZMS_Slide-Banner_201_A.06f7fa208212fb4dc92e611fdf69304e.jpg",
+        imgs2:"https://www.zoomcar.com/assets/component-images/ZMS_Slide-Banner_201_C.c9d9a766c44e0796bce6e3bdcc65d589.jpg",
+        imgs3:"https://www.zoomcar.com/assets/component-images/ZMS_Slide-Banner_201_E.43c8d28a91111b0eb44831b1d040bc79.jpg",
+    }]
+    localStorage.setItem("slider",JSON.stringify(slider1))
+    console.log(chaithanya)
+    
+    // var detail= document.getElementById("para")
+
+    // // slider part start here..........
+    // let slide=document.getElementById("slider")
+    // let tab1=document.getElementById("tabs1")
+    // tab1.style.backgroundColor="#10a310"
+    // var fig = document.createElement("figure")
+    // var img1= document.createElement("img")
+    // var img2= document.createElement("img")
+    // var img3= document.createElement("img")
+    // img1.src="https://www.zoomcar.com/assets/component-images/ZMS_Slide-Banner_201_A.06f7fa208212fb4dc92e611fdf69304e.jpg"
+    // img2.src="https://www.zoomcar.com/assets/component-images/ZMS_Slide-Banner_201_C.c9d9a766c44e0796bce6e3bdcc65d589.jpg"
+    // img3.src="https://www.zoomcar.com/assets/component-images/ZMS_Slide-Banner_201_E.43c8d28a91111b0eb44831b1d040bc79.jpg"
+    // fig.append(img1,img2,img3)
+    // let line=document.createElement("h2")
+    // line.innerText="Features"
+    // line.setAttribute("id","line")
+    // slider.append(fig,line)
+
+
+    const slider=(data,detail,slide,container)=>{
+        container.innerHtml=""
+        data.forEach(({line1,line2,imgs1,imgs2,imgs3})=>{
+            var p=document.createElement("p")
+            p.innerText=line1
+            var p1=document.createElement("p")
+            p1.innerText=line2
+            p.style.color="black"
+            p1.style.color="black"
+            detail.append(p,p1)
+            // ........slider//..........
+            var fig = document.createElement("figure")
+            var img1= document.createElement("img")
+            var img2= document.createElement("img")
+            var img3= document.createElement("img")
+            img1.src=imgs1
+            img2.src=imgs2
+            img3.src=imgs3
+            fig.append(img1,img2,img3)
+            let line=document.createElement("h2")
+            line.innerText="Features"
+            line.setAttribute("id","line")
+            slide.append(fig,line)
+        })
+    }
+    export {slider}
+<script/>
+window.location.href="slider.html"
