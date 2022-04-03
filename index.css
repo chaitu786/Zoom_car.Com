@@ -9,7 +9,7 @@
   justify-content: space-between;
   /* overflow: hidden; */
   font-style: normal;
-
+z-index: 5;
   top: 0;
   width: 100%;
   position: fixed;
@@ -381,14 +381,15 @@ a{
 text-decoration: none;
 color: #f5f5f5;
 }
-#search{
+#search1{
  
 height: 15px;
 background-color: white;
-/* position: absolute; */
+position: absolute;
 /* z-index: 100; */
-margin-top: 320px;
-
+top: 50%;
+left: 35%;
+right: 0%;
 
 width: 25%;
 /* margin-left: 50%; */
@@ -415,13 +416,22 @@ sans-serif;
   border-radius: 50%;
  
 }
-#find_cars{
-  /* position: absolute; */
-width: 28.4%;
-margin-top: 1%;
-padding: 1%;
+ #find_cars{
+  
+width: 112%;
+margin-top: 6%;
+padding: 4%;
 background-color: #10a310;
 border: none;
 border-radius: 4px;
 color: white;
+margin-left: -20px;
+} 
+#loder{
+  z-index: 2;
+top: 250px;
+left: 450px;
+position: relative;
+  display: flex;
+  background: transparent;
 }

@@ -117,7 +117,23 @@ let findCar = document.getElementById("find_cars");
 findCar.addEventListener("click", function () {
   // if(local)
   // console.log(local);
-  if (local != null) {
+  let login = document.getElementById("login&signup");
+
+  if (local != null && login.innerHTML != "Login?sign") {
     location.href = "./chaithyanya/Zoom_car.Com/ProductPage/product.html";
+  } else {
+    setTimeout(() => {
+      location.href = "./aakash/signsignup/login_signup.html";
+    }, 1500);
+    let img = document.createElement("img");
+    img.src =
+      "https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif?20151024034921";
+    let div = document.createElement("div");
+
+    div.append(img);
+    div.id = "loder";
+    console.log("div:", div);
+
+    document.getElementById("top_page").append(div);
   }
 });
