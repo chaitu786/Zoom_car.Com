@@ -1,0 +1,244 @@
+#main{
+    width: 70%;
+     margin: auto;
+
+ }
+ #nav{
+     margin-bottom: 10%;
+ }
+ #iframe>iframe{
+     margin-top: 20px;
+     width: 100%;
+     height: 550px;
+ }
+ #protectInfo{
+     display: flex;
+    overflow-x: scroll;
+/* max-width: calc(100vw - 24px);
+padding-bottom: 16px */
+gap: 10px;
+ }
+ #protectInfo>div>img{
+     width: 300px;
+     height: 171px;
+ }
+ #growMarket{
+    display:grid;
+    grid-template-columns: repeat(4,267px);
+    grid-template-rows: repeat(1,250px);
+    width: 70%;
+    column-gap: 10px;;
+    
+ }
+ #growMarket>div{
+     text-align: center;
+ }
+ .grow{
+    border-right: 1px solid darkgrey;
+    column-gap: 80px;
+ }
+ #img3{
+     width: 100%;
+     margin-top: 50px;
+ }
+
+ #calEarn{
+    font-family: IBM Plex Sans;
+font-size: 48px;
+font-weight: 600;
+line-height: 1.25;
+letter-spacing: -.4px;
+color: #1f1f1f;
+ }
+ #calculateButton{
+    font-family: IBM Plex Sans;
+font-size: 14px;
+font-weight: 600;
+line-height: 1.14;
+letter-spacing: .8px;
+color: #fff;
+text-transform: uppercase;
+padding: 16px 20px;
+border-radius: 4px;
+background-color: #10a310;
+margin-bottom: 20px;
+display: block;
+border: none;
+
+ }
+ 
+
+#calculate_earning{
+    color: #383838;
+font-family: IBM Plex Sans,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif!important;
+-webkit-tap-highlight-color: transparent;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+user-select: none;
+-webkit-font-smoothing: antialiased;
+box-sizing: inherit;
+padding: 24px 40px;
+ }
+
+#blog{
+    color: #383838;
+font-family: IBM Plex Sans,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif!important;
+overflow-x: auto;
+display: flex;
+margin-top: 50px;
+gap: 5px;
+background-color: rgb(241, 241, 241);
+border-radius: 10px;
+    }
+
+
+#que>div{
+    display: flex;
+}
+#confuse{
+    display: flex;
+}
+#confuse2{
+    display: flex;
+}
+#confuse2>div>:last-child{
+    display: flex;
+}
+.img1{
+        color: #383838;
+font-family: IBM Plex Sans,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif!important;
+-webkit-tap-highlight-color: transparent;
+background-repeat: no-repeat;
+background-size: cover;
+padding: 54px 0 54px 80px;
+min-height: 332px;
+border-radius: 12px;
+background-position-y: 100%;
+background-image: url("https://www.zoomcar.com/zap/subscribe/build/a2ff940380f1315a0c0aacefb766e858.jpg");
+    }
+#steps1{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    
+} 
+#steps2{
+    margin-top: 60px;
+    display: flex;
+    gap: 20px;
+}
+#steps3{
+    margin-top: 60px;
+    display: flex;
+}
+.steps>.image{
+    width: 312px;
+    height: 156px;
+}
+
+#rating{
+    font-family: IBM Plex Sans;
+font-size: 30px;
+font-weight: 600;
+line-height: 1.33;
+color: #1f1f1f;
+height: 400px;
+width: 100%;
+background-color: rgb(244, 244, 244);
+border-radius: 10px;
+border-radius: 12px;
+padding: 32px 0;
+margin: 40px 0 32px;
+text-align: center;
+}
+.title{
+    font-family: IBM Plex Sans;
+font-size: 24px;
+font-weight: 600;
+line-height: 1.33;
+color: #1f1f1f;
+
+}
+.description{
+    font-family: IBM Plex Sans;
+font-size: 18px;
+line-height: 1.5;
+letter-spacing: .24px;
+color: #666;
+}
+.title2{
+    font-family: IBM Plex Sans;
+font-size: 16px;
+font-weight: 600;
+line-height: 1.5;
+letter-spacing: .24px;
+color: #1f1f1f;
+margin: 16px 0 4px;
+}
+.description2{
+    font-family: IBM Plex Sans;
+font-size: 14px;
+line-height: 1.5;
+letter-spacing: .24px;
+color: #666;
+
+}
+.que{
+font-family: IBM Plex Sans,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif!important;
+font-size: 18px;
+line-height: 1.5;
+letter-spacing: .24px;
+color: #1f1f1f;
+margin: 0 8px 0 0;
+grid-area: question;
+display: flex;
+justify-content: space-between;
+border-bottom: .5px solid #1f1f1f;
+}
+#confused{
+display: flex;
+width: 100%;
+height:170px;
+margin: auto;
+color:blanchedalmond;
+margin-top: 50px;
+}
+.contecus{
+width:80% ;
+height: 100%;
+margin-left: 40px;
+display: flex;
+border: 1px solid gray;
+border-radius: 10px;
+}
+.stillhavequestion{
+width: 35%;
+height: 100%;
+}
+.a1{
+width: 60%;
+margin-left: 20px;
+text-decoration:none;
+}
+.justifysetting a{
+display: flex;
+justify-content:space-between;
+text-decoration: none;
+margin-top: 30px;
+
+}
+#lastbox{
+    margin: auto;
+    width: 70%;
+    background-color:whitesmoke;
+    height: 200px;
+    margin-top: 20px;
+}
+#brefing{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.5px solid #1f1f1f;
+}

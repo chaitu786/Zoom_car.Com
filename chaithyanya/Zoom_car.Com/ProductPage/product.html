@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link
+      href="//assets.zoomcar.com/assets/favicon-94c70086866938b66cbd6706cfb6e048.png"
+      rel="shortcut icon"
+      type="image/png"
+    />
+    <link rel="stylesheet" href="../ProductPage/main.css" />
+    <link rel="stylesheet" href="/index.css">
+    <style>
+      /*.............................the product page css start here.......................................*/
+    </style>
+  </head>
+  <body>
+    <div id="nav"></div>
+    <!-------------------------------------- sorting page start here ------------------------------------------>
+    <div id="productPage">
+      <div id="sorting">
+        <div id="center">
+          <p id="p">Seats</p>
+          <div id="seats">
+            <button value="4" id="four">4</button>
+            <button value="5" id="five">5</button>
+            <button value="6" id="six">6</button>
+            <button value="7" id="seven">7</button>
+          </div>
+          <p id="p">Car Types</p>
+          <div id="brand">
+            <button id="SUV">SUV</button>
+            <button id="hatchback">hatchback</button>
+            <button id="sedan">sedan</button>
+          </div>
+          <p id="p">Fuel</p>
+          <div id="type">
+            <button id="petrol">Petrol</button>
+            <button id="Diesel">Diesel</button>
+          </div>
+          <p id="p">Delivery Type</p>
+          <div id="delivery">
+            <button>Home Dlivery</button>
+            <button>Airport</button>
+          </div>
+          <div id="color">
+            <p>
+              Enjoy free kilometers. If you leave the car with excess fuel
+              compared to booking start, value of that extra fuel will be
+              refunded to you
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-------------------------------------- sorting page end here ------------------------------------------>
+
+      <!------------------------------ product page start here ------------------------------------------------->
+      <div id="prod">
+        <div id="products">
+          <div id="inputs">
+            <div>
+              <div id="dot"></div>
+            </div>
+            <div id="location">append location</div>
+          </div>
+          <div id="inputs1"></div>
+        </div>
+        <div id="cars"></div>
+      </div>
+      <!------------------------------ product page end here ------------------------------------------------->
+    </div>
+
+  </body>
+</html>
+<script type="module">
+
+import {header} from "/COMPONENT/navbar.js"
+let nav=document.querySelector("#nav")
+nav.innerHTML=header()
+  import { appendData } from "../ProductPage/product.js";
+  let add = document.getElementById("cars");
+  let mainData = JSON.parse(localStorage.getItem("city"));
+
+  appendData(mainData, add);
+
+  let location = document.getElementById("location");
+
+  let place = localStorage.getItem("location");
+
+  location.innerText = place + "," + place + "," + "India";
+
+  let date = document.getElementById("inputs1");
+  let gate1 = document.createElement("p");
+  gate1.innerText = "🕑- 02-April-2022";
+  date.append(gate1);
+
+  // sorting.........................................
+  let four = document.getElementById("four");
+  four.addEventListener("click", function () {
+    var a = mainData.filter(function (el) {
+      //   console.log("el:", el);
+      return el.Seater == 4;
+      // console.log("anuj");
+    });
+
+    appendData(a, add);
+  });
+  //   click button 6////
+  let six = document.getElementById("six");
+  six.addEventListener("click", function () {
+    var a = mainData.filter(function (el) {
+      return el.Seater == 6;
+      // console.log("anuj");
+    });
+
+    appendData(a, add);
+  });
+  //   click button 5////
+  let five = document.getElementById("five");
+  five.addEventListener("click", function () {
+    var a = mainData.filter(function (el) {
+      //   console.log("el:", el);
+      return el.Seater == 5;
+      // console.log("anuj");
+    });
+
+    appendData(a, add);
+  });
+  //   click button 7////
+  let seven = document.getElementById("seven");
+  seven.addEventListener("click", function () {
+    var a = mainData.filter(function (el) {
+      console.log("el:", el);
+      return el.Seater == 7;
+      // console.log("anuj");
+    });
+
+    appendData(a, add);
+  });
+
+  // filter by fuel////////////////..............
+
+  let diesel = document.getElementById("petrol");
+  petrol.addEventListener("click", function () {
+    var a = mainData.filter(function (el) {
+      console.log("el:", el);
+      return el.fuel == "Petrol";
+      // console.log("anuj");
+    });
+    appendData(a, add);
+  });
+
+  //////////Diesel
+  let Diesel = document.getElementById("Diesel");
+  Diesel.addEventListener("click", function () {
+    var a = mainData.filter(function (el) {
+      // console.log("el:", el);
+      return el.fuel == "Diesel";
+      // console.log("anuj");
+    });
+    appendData(a, add);
+  });
+
+  //////sorting car type.........
+
+  let suv = document.getElementById("SUV");
+  suv.addEventListener("click", function () {
+    var a = mainData.filter(function (el) {
+      return el.brand == "SUV";
+    });
+    appendData(a, add);
+  });
+
+  let sedan = document.getElementById("sedan");
+  sedan.addEventListener("click", function () {
+    var a = mainData.filter(function (el) {
+      return el.brand == "sedan";
+    });
+    appendData(a, add);
+  });
+
+  let hatchback = document.getElementById("hatchback");
+  hatchback.addEventListener("click", function () {
+    var a = mainData.filter(function (el) {
+      return el.brand == "hatchback";
+    });
+    appendData(a, add);
+  });
+
+
+  let drop_left = document.getElementById("drop_left");
+let nav_drop = () => {
+  let drop_left = document.getElementById("drop_left");
+  drop_left.style = "display: none";
+};
+nav_drop();
+let nav_menu = document.getElementById("nav_menu");
+nav_menu.addEventListener("click", function () {
+  drop_left.style = "display: block";
+
+  
+});
+
+let hide = document.getElementById("hide");
+hide.addEventListener("click", function () {
+  drop_left.style = "display: none;";
+});
+
+
+let login_profile=()=>{
+let login= document.getElementById("login&signup")
+
+let userdata=JSON.parse(localStorage.getItem("current_user"))
+let nav_right = document.getElementById("nav_right");
+// console.log('userdata:', userdata)
+if(userdata!=null){ 
+login.innerHTML=userdata[0]
+}
+if(login.innerHTML!="Login?sign"){
+
+nav_right.innerHTML=` <h3 id="become">Become a Host</h3>
+        <h3 id="zms">ZMS</h3>
+     
+        <h3 id="login&signup">${login.innerHTML=userdata[0]}</h3>
+<h3 id="profile_photo" >
+      <img src="	https://www.zoomcar.com/img/icons/icons_user.png" alt="">
+    </h3>`
+}
+
+}
+
+login_profile()
+
+let login= document.getElementById("login&signup")
+
+login.addEventListener("click",function(){
+  location.href="/aakash/signsignup/login_signup.html"
+  
+})
+</script>

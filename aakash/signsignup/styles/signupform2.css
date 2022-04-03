@@ -1,0 +1,257 @@
+html {
+    height: 100%;
+}
+body{
+    background: #fff;
+    
+    font-style: normal;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    box-sizing: border-box;
+}
+.app-container{
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: inherit;
+    
+    height:100%;
+}
+.app-container .page{
+    height:100%;
+    min-height: 100%;
+    overflow: auto;
+}
+.page-login{
+    max-width: 600px;
+    width:100%;
+    height:100%;
+    margin: auto;
+}
+.page-login .zc-auth-layout-default{
+    height:100%;
+}
+.zc-auth-layout-default{
+   
+    position:relative;
+    border-radius: 8px;
+    background-color: #fff;
+    max-width:960px;
+    width:100%;
+    min-height: 600px;
+    margin:0px auto;
+    display: flex;
+    flex-direction: row;
+    color:#33414f;
+}
+.zc-auth-layout-default .zc-auth-body {
+flex: 1;
+text-align: start;
+}
+.al-s{
+    text-align: start;
+}
+.zc-auth-body{
+    font: 14px;
+    padding: 0px 90px;
+}
+.zc-auth-body .zc-auth-content-top{
+    display: flex;
+    flex-direction: column-reverse;
+    height: calc(100% - 320px);
+    background-color: #fff;
+}
+.full-screen{
+    font-size: 14px;
+    color: #33414f;
+    font-style: normal;
+    text-align: start;
+    box-sizing: inherit;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background: #fff;
+
+}
+.full-screen .full-screen-toolbar {
+    padding: 16px;
+    text-align: start;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    max-width: 460px;
+    z-index: 1;
+}
+.full-screen.full-screen-toolbar span {
+    font-size: 24px;
+}
+.full-screen .full-screen-content {
+    height: 100%;
+    overflow: auto;
+    padding-top: 56px;
+}
+.login-form-container{
+    padding: 16px;
+    padding-top: 0;
+    height: calc(100% - 50px);
+    overflow: auto;
+}
+.login-form-container .form-heading{
+    font-family: "IBM Plex Sans";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.16px;
+    color: #1f1f1f;
+}
+.form-sub-heading{
+    padding:8px 0px 16px;
+    font-family: "IBM Plex Sans";
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    color: #666;
+    padding-top: 8px;
+    padding-bottom: 16px;
+}
+.with-country-selector {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.form-input-container {
+    padding-top: 24px;
+}
+.country-selector {
+    font-family: "IBM Plex Sans";
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: .24px;
+    color: #1f1f1f;
+    padding:10px;
+    border-radius: 4px;
+    border: 2px solid green;
+   
+}
+.multiselect {
+    box-sizing: content-box;
+   
+    position: relative;
+    width: 100%;
+    min-height: 40px;
+    text-align: left;
+    color: #35495e;
+}
+.multiselect>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.num{
+    font-style: normal;
+    margin-left: 3px;
+    font-weight: 400;
+    letter-spacing: .24px;
+    text-align: left;
+    color: #35495e;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 20px;
+    box-sizing: border-box;
+}
+.text-input{
+    font-size: 14px;
+    color: #33414f;
+    font-style: normal;
+    text-align: start;
+   
+    position: relative;
+    flex: 1;
+    margin-left: 12px;
+            }
+.text-input>input{
+    border: none;
+    font-family: "IBM Plex Sans";
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: .24px;
+    color: #666;
+    position: relative;
+    border-radius: 4px;
+    border: 1px solid #e0e0e0;
+    background-color: #fff;
+    width: 95%;
+    padding: 16px 12px;
+    outline: none;
+}
+
+.continue-button{
+
+    font-style: normal;
+    text-align: start;
+    box-sizing: inherit;
+    border-radius: 4px;
+    padding: 16px 20px;
+    background-color: #10a310;
+    width: 90%;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: center;
+    font-family: "IBM Plex Sans";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0.8px;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
+    position: absolute;
+    bottom: 0px;
+    max-width: 460px;
+    left: 50%;
+    transform: translateX(-50%);
+            }
+    .input-box {
+    padding-top: 24px;
+    padding-bottom: 16px;
+    position: relative;
+            }
+    .text-input-wrapper{
+        font-size: 14px;
+        color: #33414f;
+        font-style: normal;
+        text-align: start;
+        box-sizing: inherit;
+        position: relative;
+        flex: 1;
+
+    }
+    .text-input-wrapper input {
+            border: none;
+            font-family: "IBM Plex Sans";
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 400;
+            letter-spacing: .24px;
+            color: #666;
+            position: relative;
+            border-radius: 4px;
+            border: 1px solid #e0e0e0;
+            background-color: #fff;
+            width: 95%;
+            padding: 16px 12px;
+            outline: none;
+        }
