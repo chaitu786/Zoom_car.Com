@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <link rel="stylesheet" href="/aakash/payment/styles/upi.css">
+</head>
+<body>
+    <div class="content" >
+        Select Mobile Wallet
+        
+            <img src="https://www.zoomcar.com/build/760ee3019ff287f2caed7e40c92b1ca5.png" width="50px" height="50px" alt="secure image logo">
+           </div>
+           <div class="container">
+               <input type="text " id="text" placeholder="Enter Upi Id">
+               <input type="submit" name="" value="verify" id="btn" onclick="myfunction()">
+
+           </div>
+           <div id="backbtn">
+            <input type="submit" name="" id="back" value="back" onclick="myfunction1()">
+        </div>
+</body>
+</html>
+
+<script>
+    function myfunction()
+{
+    alert("Payment Done");
+    window.location.href = "home.html";
+}
+function myfunction1()
+{
+   
+    window.location.href = "paymentpage.html";
+}
+</script>

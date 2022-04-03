@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login_id</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Shippori+Mincho&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=IBM+Plex+Sans&family=Shippori+Mincho&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="/aakash/signsignup/styles/login.css">
+   <link href='//assets.zoomcar.com/assets/favicon-94c70086866938b66cbd6706cfb6e048.png' rel='shortcut icon' type='image/png'>
+</head>
+<body>
+
+    <div class="app-container">
+        <div class="page page-login">
+            <div class="zc-auth-layout-default al-s zc-auth-index">
+                <div class="zc-auth-body">
+
+                    <div class="full-screen">
+                        <div class="full-screen-toolbar">
+                            <span class="arrow-left">
+                                <i class="fas fa-arrow-left"></i>
+                            </span>
+                        </div>
+                        <div class="full-screen-content">
+                            <div class="login-form-container">
+                                <div class="form-heading">Enter Email ID</div>
+                                <div class="form-sub-heading">We'll verify if the email is registered with us</div>
+                               
+                                    
+                                    <div class="input-box">
+                                        <div class="text-input-wrapper">
+                                            <input name="email" id="email" placeholder="Email Id" maxlength="250" inputmode="text" autocomplete="off" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="continue-button">
+                                        <div>
+                                          CONTINUE
+                                        </div>
+                                    </div>
+                                
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
+<script>
+    var data = JSON.parse(localStorage.getItem("userdata"))||[];
+    console.log(data);
+
+    document.querySelector(".arrow-left").addEventListener("click",function (){
+        window.location.assign("login_signup.html");
+    })
+   
+    
+    var a=0;
+    document.querySelector(".continue-button").addEventListener("click",function (){
+        var email=document.querySelector("#email").value;
+        console.log(email);
+        data.forEach(element => {
+                 if(element.email==email){
+                     console.log("1");
+                   return a=1;
+            }
+        });
+        if(a>0){
+            localStorage.setItem("New_email",email);
+            window.location.assign("login_pass.html");
+        }
+        else{
+            alert("New user please register");
+            localStorage.setItem("New_email",email);
+            window.location.assign("sign-up_form2.html")
+        }
+    })
+</script>
+ 

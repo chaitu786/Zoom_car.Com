@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login/signup</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Shippori+Mincho&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=IBM+Plex+Sans&family=Shippori+Mincho&display=swap"
+      rel="stylesheet"
+    />
+    <link href='//assets.zoomcar.com/assets/favicon-94c70086866938b66cbd6706cfb6e048.png' rel='shortcut icon' type='image/png'>
+    <link rel="stylesheet" href="/aakash/signsignup/styles/logsign.css">
+  </head>
+  <body>
+    <div class="app-container">
+      <div class="page page-login">
+        <div class="zc-auth-layout-default al-s zc-auth-index">
+          <div class="zc-auth-body">
+            <div class="zc-auth-content-top">
+              <div class="zc-auth-content-top-wrap">
+                <img
+                  src="https://www.zoomcar.com/build/fb65fcc43b8bededb813e093ea2d47d3.svg"
+                  width="100%"
+                  alt="login-banner-imag"
+                />
+              </div>
+            </div>
+            <div class="login-container">
+              <div class="heading">Enter details to login/sign-up</div>
+              <div class="manu-option-container">
+                <div class="option-mobile">
+                  <div class="country-selector">
+                    <img
+                      src="https://s3-ap-southeast-1.amazonaws.com/zoomcar/images/original/6f17ebdd21613e4fb147c47d136ed7b722d15152.png?1633930605"
+                      width="32px"
+                      alt=""
+                    />
+                    <span class="num">+91</span>
+                  </div>
+                  <span class="text">Enter Mobile Number</span>
+                </div>
+                <div class="option">Continue wih Email Id</div>
+                <div class="option-social">
+                  <span class="tittle">Continue via Social</span>
+                  <img
+                    src="https://www.zoomcar.com/build/62ba375ec1a9fbcbee9e9099181c8d38.svg"
+                    alt="fb-logo"
+                  />
+                  <img
+                    src="https://www.zoomcar.com/build/279de03b0c8ecdb4db56a79da6e775e6.svg"
+                    alt="google-logo"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  var mobile = "";
+  var email = "";
+  localStorage.setItem("New_email", email);
+  localStorage.setItem("New_number", mobile);
+  document.querySelector(".text").addEventListener("click", function () {
+    window.location.assign("sign-up_form.html");
+    console.log("clicked");
+  });
+  document.querySelector(".option").addEventListener("click", function () {
+    window.location.assign("login_id.html");
+    // console.log("clicked");
+  });
+</script>
