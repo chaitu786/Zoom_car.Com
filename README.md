@@ -7,18 +7,18 @@ It was during the final week which is depicted as the construct week. We have do
 
 # <span style="color:red"> About Website: </span>
 
- [Zoomcar](www.zoomcar.com) Zoomcar, is an Indian self-drive car rental company, headquartered in Bangalore, India. The company was founded in 2013 by David Back and Greg Moran. It currently operates in 34+ cities. 
+ [Zoomcar](https://www.zoomcar.com/in/) , is an Indian self-drive car rental company, headquartered in Bangalore, India. The company was founded in 2013 by David Back and Greg Moran. It currently operates in 34+ cities. 
  Self-drive cars from Zoomcar have given customers more control, privacy, and freedom. Book a self-drive car in any city you visit with the Zoomcar app on your phone and feel at home wherever you go. 
 
 # <span style="color:red"> Tech Stack Used: </span>
 
-We have used EJS, CSS, Advance JavaScript, Paytm Payment API, Google API, Express, NPM packages, MongoDb Atlas realtime storage for building this Project. We also used tools like GitHub for collaboration of our project, Slack & Zoom as means of a communication channel.
+We have used HTML, CSS, Advance JavaScript, ZoomCar Home Page API, , NPM packages, Node JS  realtime storage for building this Project. We also used tools like GitHub for collaboration of our project, Slack & Zoom as means of a communication channel.
 
 # <span style="color:red"> Details of Tech stack used: </span>
 
-<b>EJS:</b>
+<b>HTML:</b>
 
-We have used Embedded JavaScript Template (ejs) for frontend to communicate with Backend.
+We have used HTML for frontend .
 
  <b>CSS:</b>
 
@@ -26,17 +26,12 @@ We have used to add styling to the website. We used Advance CSS for Popup Modal 
 
  <b> Advance JavaScript:</b>
 
-We have used to add logical functionalities to the web pages like the on Click function. We have added all the functionalities.
+We have used to add logical functionalities to the web pages like the on Click function. We have added all the functionalities and Embadded with Backend.
 
-<b>MongoDb</b>
+<b> Node JS :</b>
+We have used Node js for asking data from the Backend etc. 
 
-We have used MongoDb atlas realtime storage as database for storing user's data, car details.
 
-<b> Express :</b>
-We have used Express for route using async await for asking data from the Backend etc. 
-
-<b> Mongoose :</b>
-We have used Mongoose Package to established connection  express and Database.
 
 # <span style="color:red"> Experience of team: </span>
 
@@ -119,25 +114,6 @@ This entire journey of making the project was awesome. We have learned lots of t
 
 ![checkout](https://user-images.githubusercontent.com/91541289/146790562-03fa8212-2eaf-41dd-ab1a-fecf07c9a1b7.png)
 
-- ## <span style="color:blue"> Mode Of Payment </span>
-
-![payment Option](https://user-images.githubusercontent.com/91541289/146790581-b69cd1a4-8c9b-4208-8181-e8314bb3cde7.png)
-
-
-![](- ## <span style="color:blue"> Payment through Paytm Wallet  </span>
-
-<img width="400" alt="patym Details" src="https://user-images.githubusercontent.com/91541289/141655237-e4c4b3e5-d120-49b4-8ded-9f840de87bf6.png">
-
-<img width="200" alt="Paytm Wallet " src="https://user-images.githubusercontent.com/91541289/141655629-c43ed757-6d9e-4b97-b4f9-062fb08db5b8.png">
-
-<img width="200" alt="paytm Wallet-2" src="https://user-images.githubusercontent.com/91541289/141655624-97546a26-8bca-4507-adf7-f3f19ac62eaf.png">
-
-<img width="200" alt="paytm-3" src="https://user-images.githubusercontent.com/91541289/141655627-e5f36701-c982-4ac5-b91d-7a552a9d5ace.png">
-
-<img width="200" alt="paytm-4" src="https://user-images.githubusercontent.com/91541289/141655628-4925d4c0-8a83-4ef1-bc04-94dc79f5b75e.png">
-
-![confirmation](https://user-images.githubusercontent.com/91541289/146790566-d5fa503b-744c-432a-b2ab-f4310dc1a8a5.png)
-
 <br>
  <hr>
 
@@ -147,9 +123,6 @@ This entire journey of making the project was awesome. We have learned lots of t
 We have faced few challenges while working on project we dealt with them , sometime it take lots of time but on the other hand we got some learning from that. some of the challenges are-<br>
 As we are working on a team, we have to compile our data into our project sometime it messed.<br>
 Functionality of each button on click and provide link over there . We have done this in precise manner. so that every thing will set up in a certain direction.<br>
-location for pick up and drop drag and drop from google map. <br>
-Integration backend to frontend as we were using Ejs, strugled little bit during integration.<br> 
-Getting  realtime data from the backend and working on it <br>
 
 
 # <span style="color:red">Conclusion: </span>
@@ -161,16 +134,13 @@ We are very thankful for the support of my teammates and instructor for the comp
 
 # <span style="color:red"> Team Members: </span>
 
-<!-- - # Pankaj Kumar (fw12_276)
-![WhatsApp Pankaj Image 2021-11-13 at 7 50 05 PM](https://user-images.githubusercontent.com/91541289/141654994-66b34ad4-9629-4f95-bfc1-f3f331191d8e.jpeg)
+# Chaithanya REddy (fw16_591)
+![WhatsApp Pankaj Image 2021-11-13 at 7 50 05 PM](https://elaborate-torte-795402.netlify.app/images/round.png)
 
-[Twitter](https://twitter.com/realpankajk)
+[Linkedin](https://www.linkedin.com/in/chaithanya-reddy-175023207/)
 
-[Linkedin](https://www.linkedin.com/in/iampankajk/)
 
-[Medium](https://medium.com/@iampankajk/zoomcar-com-clone-67ed397258e6)
-
-- # Nikita Parekh (fw11_255)
+<!-- - - # Nikita Parekh (fw11_255)
 ![WhatsApp Nikita Image 2021-11-13 at 7 51 25 PM](https://user-images.githubusercontent.com/91541289/141654993-c8d58a91-2473-4e09-9ce0-9bfd25ab918a.jpeg)
 
 [Linkedin](https://www.linkedin.com/in/nikitaparekh00/)
