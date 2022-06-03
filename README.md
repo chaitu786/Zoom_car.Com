@@ -132,12 +132,12 @@ We are very thankful for the support of my teammates and instructor for the comp
 # <span style="color:red"> Thank You For Reading </span>
 
 
-# <span style="color:red"> Team Members: </span>
+<!-- # <span style="color:red"> Team Members: </span>
 
 # Chaithanya REddy (fw16_591)
 ![WhatsApp Pankaj Image 2021-11-13 at 7 50 05 PM](https://elaborate-torte-795402.netlify.app/images/round.png)
 
-[Linkedin](https://www.linkedin.com/in/chaithanya-reddy-175023207/)
+[Linkedin](https://www.linkedin.com/in/chaithanya-reddy-175023207/) -->
 
 
 <!-- - - # Nikita Parekh (fw11_255)
