@@ -324,14 +324,7 @@ let append = document.querySelector("#cars");
       total.innerText=((+total.innerText)-255)
     }
   }
-
-
-
-
   document.getElementById("inp").addEventListener("click", chaitu2);
-
-
-
   let book2=document.getElementById("inp")
   function chaitu2(){
     if (book2.checked == true) {
