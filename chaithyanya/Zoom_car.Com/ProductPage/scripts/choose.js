@@ -8,7 +8,7 @@ const chaitu = async () => {
   let location = input.value;
   localStorage.setItem("location", location);
   console.log(location);
-  let res = await fetch(`http://localhost:3000/products/`);
+  let res = await fetch(`https://mini-mock-server-hqlo.vercel.app/api/location`);
   let data = await res.json();
   let city = data[location];
   localStorage.setItem("city", JSON.stringify(city));
